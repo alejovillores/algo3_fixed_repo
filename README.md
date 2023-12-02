@@ -1,11 +1,15 @@
 ![tp2](https://github.com/fiuba/algo3_proyecto_base_tp2/actions/workflows/build.yml/badge.svg)
  [![codecov](https://codecov.io/gh/fiuba/algo3_proyecto_base_tp2/branch/master/graph/badge.svg)](https://codecov.io/gh/fiuba/algo3_proyecto_base_tp2)
 
+## Nombre
+
 # TP2 Algoritmos 3: {nombre} 
 
 Trabajo Práctico número 2 de la materia Algoritmos y Programación III de FIUBA
 
 ## Grupo {N}
+
+(sacar integrantes)
 
 * **Integrante 1** - [integrante1](https://github.com/integrante1)
 * **Integrante 2** - [integrante2](https://github.com/integrante2)
@@ -29,3 +33,4 @@ Aquellos que deseen colaborar con el proyecto pueden consultar la [guía de desa
 ## Licencia
 
 Este repositorio se encuentra bajo la Licencia MIT.
+
