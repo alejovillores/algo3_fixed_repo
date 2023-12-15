@@ -1,0 +1,4 @@
+# Add 'feature' label to any PR where the head branch name starts with `feature` or has a `feature` section in the name
+📦%20entrega:
+  - head-branch: ['^semana-*']
+  - base-branch: ['main', 'master']
