@@ -1,12 +1,16 @@
-name: 'Pull Request Labeler'
+name: Label Pull Request
 on:
-  - pull_request_target
+  pull_request:
+    types:
+      - opened
 
 jobs:
-  labeler:
-    permissions:
-      contents: read
-      pull-requests: write
+  label:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/labeler@v5
+      - name: Add label to pull request
+        run: gh pr edit $PR_NUMBER --add-label $LABEL
+        env:
+          GITHUB_TOKEN: ${{ secrets.API_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          LABEL: '📦%20entrega'
