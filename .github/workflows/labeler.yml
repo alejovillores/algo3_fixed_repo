@@ -13,4 +13,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.API_TOKEN }}
           LINK: ${{ github.event.pull_request.html_url }}
-          LABEL: '📦%20entrega'
+          LABEL: '📦 entrega'
