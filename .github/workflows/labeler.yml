@@ -9,8 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Add label to pull request
-        run: gh pr edit $PR_NUMBER --add-label $LABEL
+        run: gh pr edit $LINK --add-label $LABEL
         env:
           GITHUB_TOKEN: ${{ secrets.API_TOKEN }}
-          PR_NUMBER: ${{ github.event.pull_request.number }}
+          LINK: ${{ github.event.pull_request.html_url }}
           LABEL: '📦%20entrega'
