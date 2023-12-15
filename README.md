@@ -3,7 +3,7 @@
 
 ## Nombre
 
-# TP2 Algoritmos 3: {nombre grupal}
+# TP2 Algoritmos 3: {nombreSSSSSSSSS}
 
 Trabajo Práctico número 2 de la materia Algoritmos y Programación III de FIUBA
 
