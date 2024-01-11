@@ -20,6 +20,7 @@ public class RickAndMortyApiTest {
         HttpResponse<String> response = api.obtenerPersonaje(1);
 
         // Assert
+        // El status code es el codigo de la request. 200 -> OK
         assertEquals(response.statusCode(),HTTP_OK);
     }
 
@@ -32,6 +33,7 @@ public class RickAndMortyApiTest {
         HttpResponse<String> response = api.obtenerPersonaje(1);
 
         // Assert
+        // El body es un json en forma de string.
         assertTrue(response.body().contains("\"id\":1"));
     }
 
