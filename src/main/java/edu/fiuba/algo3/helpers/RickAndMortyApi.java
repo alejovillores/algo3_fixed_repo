@@ -1,4 +1,4 @@
-package edu.fiuba.algo3.modelo;
+package edu.fiuba.algo3.helpers;
 
 import java.io.IOException;
 import java.net.URI;

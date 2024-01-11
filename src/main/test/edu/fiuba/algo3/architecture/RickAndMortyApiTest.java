@@ -1,6 +1,6 @@
 package edu.fiuba.algo3.architecture;
 
-import edu.fiuba.algo3.modelo.RickAndMortyApi;
+import edu.fiuba.algo3.helpers.RickAndMortyApi;
 
 import org.junit.jupiter.api.Test;
 
