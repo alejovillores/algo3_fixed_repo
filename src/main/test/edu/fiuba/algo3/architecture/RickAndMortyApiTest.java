@@ -1,5 +1,7 @@
 package edu.fiuba.algo3.architecture;
 
+import edu.fiuba.algo3.modelo.RickAndMortyApi;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -11,16 +13,12 @@ import java.net.http.HttpResponse;
 
 public class RickAndMortyApiTest {
     @Test
-    public void ResponseStatusIsHttpOk() throws java.net.URISyntaxException, IOException, InterruptedException {
+    public void ResponseStatusIsHttpOk(){
         // Arrange
-        HttpRequest request = HttpRequest.newBuilder()
-                .uri(new URI("https://rickandmortyapi.com/api/character/1,183"))
-                .GET()
-                .build();
-        HttpClient client = HttpClient.newBuilder().build();
+        RickAndMortyApi api = new RickAndMortyApi();
 
         // Act
-        HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
+        HttpResponse<String> response = api.obtenerPersonaje(1);
 
         // Assert
         int HTTP_OK = 200;
